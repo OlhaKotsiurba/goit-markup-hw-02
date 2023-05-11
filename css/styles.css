@@ -61,6 +61,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+  margin-right: 76px;
 
   /* Inside auto layout */
   flex: none;
@@ -69,6 +70,7 @@ img {
 }
 
 .page-header {
+  border-bottom: 1px solid #e7e9fc;
   display: flex;
   align-items: center;
   padding-left: 156px;
@@ -76,27 +78,35 @@ img {
   padding-bottom: 24px;
 }
 
+.common-container {
+  display: flex;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .page-navigation {
   display: flex;
   align-items: center;
-  column-gap: 72px;
 }
 
 .menu {
   display: flex;
   align-items: center;
   column-gap: 40px;
+  gap: 40px;
+}
+
+.menu-item {
+  padding: 24px 0;
 }
 
 .contacts {
   display: flex;
-  align-items: center;
-  column-gap: 40px;
-}
-
-.container {
-  width: 1440px;
-  height: 72px;
+  gap: 40px;
 }
 
 .address-list {
@@ -157,19 +167,19 @@ img {
   color: #434455;
 }
 
+/* Перша секція */
 .main-information {
-  width: 1440px;
-  height: 600px;
   background-color: var(--brand-color);
+  padding: 188px 0;
 }
 
 .main-title {
-  padding: 188px 472px 292px 472px;
   font-style: normal;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   background-color: var(--brand-color);
+  max-width: 496px;
 
   /* or 107% */
   text-align: center;
@@ -177,6 +187,16 @@ img {
 
   /* WHITE */
   color: #ffffff;
+}
+
+.button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .modal-open-button {
@@ -229,6 +249,9 @@ img {
   letter-spacing: 0.04em;
   color: #4d5ae5;
   background-color: #f4f4fd;
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 
 .modal-open-button-all:hover,
@@ -236,10 +259,17 @@ img {
   color: #ffffff;
   background-color: #404bbf;
   cursor: pointer;
+  border: 1px solid transparent;
+}
+
+/* Друга секція */
+.container-principles {
+  padding: 120px 0;
 }
 
 .list {
   display: flex;
+  gap: 24px;
 }
 
 .principles {
@@ -247,6 +277,7 @@ img {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  width: calc((100% - 72px) / 4);
 
   /* identical to box height, or 120% */
   letter-spacing: 0.02em;
@@ -265,6 +296,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+  margin-bottom: 8px;
 
   /* or 150% */
   letter-spacing: 0.02em;
@@ -278,17 +310,21 @@ img {
   flex-grow: 0;
 }
 
-.our-team-description-list {
-  display: flex;
-  column-gap: 24px;
-}
-
+/* Третя секція */
 .our-work {
   background-color: #f4f4fd;
+  padding-bottom: 120px;
 }
 
 .our-work-images {
   background-color: #ffffff;
+  width: calc((100% - 48px) / 3);
+}
+
+/* Чертверта секція */
+.our-team-description {
+  background-color: #f4f4fd;
+  padding: 120px 0;
 }
 
 .section-description {
@@ -296,6 +332,7 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
+  margin-bottom: 72px;
 
   /* identical to box height, or 111% */
   text-align: center;
@@ -306,12 +343,19 @@ img {
   color: var(--brand-color);
 }
 
-.our-team-description {
-  background-color: #f4f4fd;
+.our-team-description-list {
+  display: flex;
+  column-gap: 24px;
 }
 
 .our-team-identification {
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.person-information {
+  padding: 32px 16px;
 }
 
 .name {
@@ -319,6 +363,7 @@ img {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  margin-bottom: 8px;
 
   /* identical to box height, or 120% */
   text-align: center;
@@ -352,6 +397,12 @@ img {
   flex-grow: 0;
 }
 
+/* Підвал сторінки */
+.under-logo-and-slogan {
+  background-color: var(--brand-color);
+  padding: 100px 0;
+}
+
 .footer-logo {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -359,9 +410,10 @@ img {
   font-size: 18px;
   line-height: 1.17;
   color: #4d5ae5;
+  margin-bottom: 16px;
 
   /* identical to box height, or 117% */
-  display: flex;
+  display: inline-block;
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -370,10 +422,6 @@ img {
   flex: none;
   order: 0;
   flex-grow: 0;
-}
-
-.under-logo-and-slogan {
-  background-color: var(--brand-color);
 }
 
 .description-first-word-under-logo {
@@ -386,12 +434,43 @@ img {
   font-size: 16px;
   line-height: 1.5;
   background-color: var(--brand-color);
+  max-width: 264px;
 
   /* or 150% */
   letter-spacing: 0.02em;
 
   /* CLOUD */
   color: #f4f4fd;
+}
+
+/* Портфоліо */
+
+.img-description {
+  padding: 96px 0 120px;
+}
+
+.button-type {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.icons-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.app-name {
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
 }
 
 .icons-description {
