@@ -96,18 +96,13 @@ img {
 .menu {
   display: flex;
   align-items: center;
-  column-gap: 40px;
-  gap: 40px;
+  
 }
 
 .menu-item {
-  padding: 24px 0;
-}
-
-.contacts {
-  display: flex;
   gap: 40px;
 }
+
 
 .address-list {
   display: flex;
@@ -121,6 +116,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  padding: 24px 0;
 
   /* identical to box height, or 150% */
   letter-spacing: 0.02em;
@@ -154,12 +150,12 @@ img {
   font-style: normal;
 }
 
-.contacts {
+.contacts-element {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-
+ 
   /* identical to box height, or 150% */
   letter-spacing: 0.02em;
 
@@ -445,6 +441,11 @@ img {
 
 /* Портфоліо */
 
+.contacts {
+  display: flex;
+  gap: 40px;
+}
+
 .img-description {
   padding: 96px 0 120px;
 }
@@ -472,6 +473,7 @@ img {
   border: 1px solid #e7e9fc;
   border-top: none;
   margin-bottom: 8px;
+  padding: 32px 16px;
 }
 
 .icons-description {
@@ -480,6 +482,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--brand-color);
+  margin-bottom: 8px;
 }
 
 .icons-type {
