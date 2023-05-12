@@ -96,12 +96,12 @@ img {
 .menu {
   display: flex;
   align-items: center;
+  gap: 40px;
 }
 
 .address-list {
   display: flex;
   align-items: center;
-
   margin-left: 332px;
 }
 
@@ -229,7 +229,6 @@ img {
   /* IRIS */
   background: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: 0 solid transparent;
   border-radius: 4px;
 }
 
@@ -266,7 +265,7 @@ img {
 
 .list {
   display: flex;
-  gap: 40px;
+  gap: 24px;
 }
 
 .principles {
