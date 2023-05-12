@@ -96,13 +96,7 @@ img {
 .menu {
   display: flex;
   align-items: center;
-  
 }
-
-.menu-item {
-  gap: 40px;
-}
-
 
 .address-list {
   display: flex;
@@ -155,7 +149,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
- 
+
   /* identical to box height, or 150% */
   letter-spacing: 0.02em;
 
@@ -201,9 +195,11 @@ img {
   font-size: 16px;
   line-height: 1.5;
   background-color: #4d5ae5;
+  min-width: 169px;
+  border: none;
 
   /* identical to box height, or 150% */
-  display: flex;
+  display: block;
   align-items: center;
   letter-spacing: 0.04em;
 
@@ -216,7 +212,7 @@ img {
   flex-grow: 0;
 
   /* Auto layout */
-  display: flex;
+  display: block;
   flex-direction: row;
   align-items: flex-start;
   padding: 16px 32px;
@@ -259,13 +255,18 @@ img {
 }
 
 /* Друга секція */
+
 .container-principles {
   padding: 120px 0;
 }
 
+.title-essence-principles {
+  width: calc((100% - 72px) / 4);
+}
+
 .list {
   display: flex;
-  gap: 24px;
+  gap: 40px;
 }
 
 .principles {
@@ -273,7 +274,7 @@ img {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  width: calc((100% - 72px) / 4);
+  margin-bottom: 8px;
 
   /* identical to box height, or 120% */
   letter-spacing: 0.02em;
