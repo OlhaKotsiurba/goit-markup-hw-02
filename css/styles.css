@@ -8,8 +8,7 @@ body {
   --brand-color: #2e2f42;
 }
 
-.list,
-.contacts {
+.list {
   list-style: none;
 }
 
@@ -71,11 +70,6 @@ img {
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
-  display: flex;
-  align-items: center;
-  padding-left: 156px;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .common-container {
@@ -108,6 +102,7 @@ img {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
+  display: block;
   line-height: 1.5;
   padding: 24px 0;
 
@@ -141,6 +136,7 @@ img {
 
 .contact-information {
   font-style: normal;
+  margin-left: auto;
 }
 
 .contacts-element {
@@ -160,7 +156,7 @@ img {
 .main-information {
   background-color: var(--brand-color);
   padding: 188px 0;
-  }
+}
 
 .main-title {
   font-style: normal;
@@ -198,7 +194,6 @@ img {
   background-color: #4d5ae5;
   min-width: 169px;
   border: none;
- 
 
   /* identical to box height, or 150% */
   display: block;
@@ -265,7 +260,7 @@ img {
   width: calc((100% - 72px) / 4);
 }
 
-.list {
+.summary {
   display: flex;
   gap: 24px;
 }
