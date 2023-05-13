@@ -74,6 +74,7 @@ img {
 
 .common-container {
   display: flex;
+  align-items: center;
 }
 
 .container {
@@ -170,6 +171,7 @@ img {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 48px;
   letter-spacing: 0.02em;
 
   /* WHITE */
@@ -215,10 +217,7 @@ img {
   padding: 16px 32px;
   gap: 10px;
 
-  position: absolute;
-  width: 169px;
-  height: 56px;
-  left: 636px;
+    left: 636px;
   right: 635px;
   top: 428px;
   bottom: 188px;
@@ -227,6 +226,7 @@ img {
   background: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  margin: 0 auto;
 }
 
 .modal-open-button-all {
@@ -289,8 +289,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 8px;
-
+  
   /* or 150% */
   letter-spacing: 0.02em;
 
@@ -305,7 +304,7 @@ img {
 
 /* Третя секція */
 .our-work {
-  background-color: #f4f4fd;
+  
   padding-bottom: 120px;
 }
 
@@ -469,8 +468,7 @@ img {
 .app-name {
   border: 1px solid #e7e9fc;
   border-top: none;
-  margin-bottom: 8px;
-  padding: 32px 16px;
+    padding: 32px 16px;
 }
 
 .icons-description {
